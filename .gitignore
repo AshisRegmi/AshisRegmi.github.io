@@ -1,0 +1,8 @@
+# secrets / local certs (never commit)
+.certs/
+node_modules/
+*.log
+_served.html
+_m.json
+/tmp/
+.DS_Store

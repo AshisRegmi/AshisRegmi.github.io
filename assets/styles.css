@@ -1,0 +1,443 @@
+/* ============================================================
+   Emergency Quick Reference — styles.css
+   Calm-but-urgent, high-contrast, LARGE-TEXT, offline-first.
+   Designed mobile-first; works without JavaScript.
+   ============================================================ */
+
+:root {
+  /* Base sizing — large text by default */
+  font-size: 20px;
+
+  /* Light (calm) palette */
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --surface-2: #eef1f5;
+  --text: #15181d;
+  --text-muted: #4f565e;
+  --border: #c9d0d9;
+
+  --urgent: #b00020;       /* reserved for the 911 action only */
+  --urgent-hover: #8c0019;
+  --urgent-text: #ffffff;
+
+  --accent: #0b5cab;       /* calm blue for navigational actions */
+  --accent-hover: #084a8c;
+  --accent-text: #ffffff;
+
+  --focus: #ffb000;        /* high-visibility focus ring */
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+
+  --tap-min: 56px;         /* minimum tap target height */
+  --space: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --surface: #1a1d23;
+    --surface-2: #23272f;
+    --text: #f2f4f7;
+    --text-muted: #aeb6c0;
+    --border: #3a414c;
+
+    --urgent: #e11d2a;
+    --urgent-hover: #ff3542;
+    --urgent-text: #ffffff;
+
+    --accent: #4ea1ff;
+    --accent-hover: #6cb4ff;
+    --accent-text: #08111e;
+
+    --focus: #ffd166;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* ---------- Reset / base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; width: 100%; max-width: 100%; overflow-x: hidden; }
+body { overflow-wrap: break-word; word-break: break-word; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.375rem;          /* ~27px large body text */
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p, ul, li { margin: 0; }
+ul { list-style: none; padding: 0; }
+
+button { font: inherit; color: inherit; cursor: pointer; }
+
+/* ---------- Accessibility helpers ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0; top: -100px;
+  background: var(--accent);
+  color: var(--accent-text);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 var(--radius) 0;
+  z-index: 100;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+
+/* Visible focus for keyboard users everywhere */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---------- Header ---------- */
+#app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+  padding-top: env(safe-area-inset-top, 0);
+}
+.header-inner {
+  padding: 0.875rem var(--space);
+  text-align: center;
+}
+#app-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+#app-subtitle {
+  margin-top: 0.15rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* ---------- Main layout ---------- */
+#main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------- Emergency call (the urgent action) ---------- */
+.emergency-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 88px;
+  background: var(--urgent);
+  color: var(--urgent-text);
+  text-decoration: none;
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 3px solid transparent;
+}
+.emergency-call:hover { background: var(--urgent-hover); }
+.emergency-call:active { transform: scale(0.99); }
+.call-icon { font-size: 2.25rem; line-height: 1; }
+
+#call-note {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Search ---------- */
+.field-label {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.search-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+  min-width: 0;
+}
+.search-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: var(--tap-min);
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+}
+.search-input::placeholder { color: var(--text-muted); }
+.search-input:focus-visible { border-color: var(--accent); }
+
+.search-clear {
+  flex: 0 0 auto;
+  min-height: var(--tap-min);
+  padding: 0 1.1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+}
+.search-clear:hover { background: var(--surface); }
+
+/* ---------- Topic list ---------- */
+.section-heading {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.topic-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 80px;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-left: 8px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.topic-card:hover { background: var(--surface-2); border-left-color: var(--urgent); }
+.topic-icon {
+  flex: 0 0 auto;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.topic-text { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.topic-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.topic-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  padding: 1rem;
+}
+
+/* ---------- Detail overlay ---------- */
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: var(--bg);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.detail-overlay[hidden] { display: none; }
+
+.detail-panel {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+.detail-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem var(--space);
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+  padding-top: calc(0.75rem + env(safe-area-inset-top, 0));
+}
+.detail-close {
+  flex: 0 0 auto;
+  min-height: var(--tap-min);
+  padding: 0 1rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  background: var(--accent);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+}
+.detail-close:hover { background: var(--accent-hover); }
+.detail-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.detail-body {
+  padding: var(--space);
+  font-size: 1.3rem;
+  line-height: 1.55;
+}
+.detail-body h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 1.25rem 0 0.5rem;
+}
+.detail-body ol,
+.detail-body ul {
+  padding-left: 1.4rem;
+  margin: 0.5rem 0 1rem;
+  display: block;
+}
+.detail-body li {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.detail-body ol {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+}
+.detail-body ol li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  background: var(--surface-2, #fff);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: var(--radius, 12px);
+  margin-bottom: 0.6rem;
+}
+.detail-body ol li::before {
+  counter-increment: step;
+  content: counter(step);
+  flex: 0 0 auto;
+  width: 1.9rem;
+  height: 1.9rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent, #b91c1c);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-top: 0.15rem;
+}
+.step-icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  margin-top: 0.1rem;
+}
+.step-text { flex: 1 1 auto; min-width: 0; }
+.detail-body ul { list-style: disc; padding-left: 1.25rem; }
+.support-btn {
+  display: block;
+  text-align: center;
+  margin: 1.5rem auto 0.5rem;
+  padding: 0.85rem 1.25rem;
+  max-width: 360px;
+  background: var(--surface-2, #eef1f5);
+  color: var(--text, #15181d);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--border, #c9d0d9);
+  border-radius: var(--radius, 14px);
+}
+.detail-body p { margin-bottom: 0.75rem; }
+.detail-body strong { font-weight: 800; }
+.detail-empty { color: var(--text-muted); }
+
+/* ---------- No-JS note ---------- */
+.noscript-note {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: var(--surface-2);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1.1rem;
+}
+.noscript-note a { color: var(--accent); font-weight: 700; }
+
+/* ---------- Larger phones / tablets ---------- */
+@media (min-width: 560px) {
+  .topic-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .topic-card { min-height: 96px; }
+}
+
+/* ---------- Motion / contrast preferences ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  .emergency-call:active { transform: none; }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --border: currentColor;
+    --text-muted: var(--text);
+  }
+  .topic-card, .emergency-call, .search-input, .search-clear, .detail-close {
+    border-width: 3px;
+  }
+}
+
+/* Windows High Contrast / forced-colors mode */
+@media (forced-colors: active) {
+  .emergency-call,
+  .topic-card,
+  .search-input,
+  .search-clear,
+  .detail-close {
+    border: 2px solid ButtonText;
+  }
+  .emergency-call { background: Highlight; color: HighlightText; }
+  .topic-card { background: Canvas; }
+  :focus-visible { outline: 3px solid Highlight; }
+}
