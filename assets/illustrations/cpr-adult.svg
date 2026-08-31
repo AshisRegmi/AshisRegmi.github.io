@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="CPR adult: victim lying on their back, rescuer kneeling, push hard and fast on the center of the chest, 2 inches deep, 100 to 120 per minute" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#fbfaf7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- ground -->
+    <line x1="22" y1="272" x2="378" y2="272" stroke="#cfd4dc" stroke-width="2"/>
+
+    <!-- ===== VICTIM, lying on back, head to the LEFT ===== -->
+    <!-- legs (flat, to the right) -->
+  <g stroke="#c78e63" stroke-width="2">
+    <rect x="268" y="240" width="96" height="34" rx="15" fill="#24445e"/>
+  </g>
+  <!-- feet -->
+  <ellipse cx="368" cy="256" rx="10" ry="8" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- torso (lying flat, chest uppermost) -->
+  <rect x="92" y="196" width="188" height="76" rx="32" fill="#24445e" stroke="#1c3550" stroke-width="2"/>
+  <!-- victim's arm lying at side -->
+  <path d="M 120 236 L 236 244" stroke="#f1c4a0" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <!-- victim head: profile, face up (nose up), hair on the pillow -->
+  <circle cx="76" cy="240" r="20" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- hair (back of head, on pillow side) -->
+  <path d="M 58 234 a20 20 0 0 1 22 -16 l -10 4 a16 16 0 0 0 -12 12 z" fill="#44332c"/>
+  <!-- nose (pointing up) + closed eye -->
+  <path d="M 78 222 q 3 4 -1 8" stroke="#b8860b" stroke-width="0" fill="none"/>
+  <path d="M 84 224 q -5 -6 -12 -5" fill="#f1c4a0" stroke="#c78e63" stroke-width="1.5"/>
+  <path d="M 62 238 q 4 4 3 9" fill="#c78e63"/>
+  <line x1="70" y1="232" x2="78" y2="232" stroke="#5b4a3a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- sternum target on chest top -->
+  <circle cx="190" cy="210" r="26" fill="none" stroke="#b00020" stroke-width="2.5" stroke-dasharray="6 5"/>
+
+  <!-- ===== RESCUER, kneeling to the right of the chest ===== -->
+  <!-- rescuer torso (upright, leaning forward over victim) -->
+  <g>
+    <path d="M 210 74 L 252 74 L 262 150 L 214 150 Z" fill="#0e7c7b" stroke="#0a5f5e" stroke-width="2"/>
+    <!-- rescuer head (profile facing down-left toward victim) -->
+    <circle cx="224" cy="54" r="16" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+    <path d="M 210 48 a16 16 0 0 1 28 0 z" fill="#3c2a22"/>
+    <!-- nose facing down-left -->
+    <path d="M 208 56 q -6 2 -4 7 q 3 -1 5 -6 z" fill="#f1c4a0" stroke="#c78e63" stroke-width="1.5"/>
+    <circle cx="216" cy="52" r="1.6" fill="#3c2a22"/>
+    <!-- neck -->
+    <rect x="218" y="70" width="14" height="12" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  </g>
+  <!-- rescuer arms: straight down to victim's chest -->
+  <g stroke="#0e7c7b" stroke-width="11" stroke-linecap="round" fill="none">
+    <line x1="220" y1="88" x2="196" y2="202"/>
+    <line x1="246" y1="88" x2="212" y2="202"/>
+  </g>
+  <!-- rescuer hands stacked on chest center -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <rect x="174" y="196" width="44" height="18" rx="9" transform="rotate(-6 196 205)"/>
+    <rect x="182" y="184" width="40" height="16" rx="8" transform="rotate(6 202 192)"/>
+  </g>
+  <!-- rescuer kneel: bent leg (thigh forward, shin down to ground) -->
+  <g stroke="#c78e63" stroke-width="2" fill="#24445e">
+    <path d="M 232 140 L 258 176 L 262 232" fill="none" stroke="#b95f28" stroke-width="0"/>
+  </g>
+  <g fill="#4b5f7a">
+    <rect x="238" y="138" width="20" height="52" rx="10" transform="rotate(35 248 164)" fill="#24445e" stroke="#1c3550" stroke-width="2"/>
+  </g>
+  <!-- foot/knee on ground -->
+  <ellipse cx="262" cy="268" rx="14" ry="7" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+
+  <!-- depth arrow -->
+  <path d="M 296 176 L 296 226" stroke="#b00020" stroke-width="3" fill="none"/>
+  <path d="M 289 218 l 7 9 l 7 -9" fill="#b00020"/>
+  <path d="M 289 184 l 7 -9 l 7 9" fill="#b00020"/>
+
+  <!-- labels -->
+  <g font-size="14" fill="#26303c">
+    <text x="312" y="196" text-anchor="start" fill="#b00020" font-weight="600">2 in</text>
+    <text x="312" y="214" text-anchor="start" fill="#5b6470">(5 cm) deep</text>
+    <text x="190" y="296" text-anchor="middle" font-size="13" fill="#5b6470">Push hard &amp; fast — center of the chest</text>
+  </g>
+</svg>

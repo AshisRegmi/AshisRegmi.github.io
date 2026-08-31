@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Heart attack: call 911 immediately, sit the person down, and give one adult aspirin to chew if they are not allergic" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- seated person -->
+  <circle cx="172" cy="70" r="17" fill="#fddcbd" stroke="#cfb096" stroke-width="2"/>
+  <path d="M 158 60 a17 17 0 0 1 28 0 z" fill="#44332c"/>
+  <circle cx="166" cy="68" r="1.8" fill="#333333"/><circle cx="180" cy="68" r="1.8" fill="#333333"/>
+  <path d="M 172 74 q -5 4 0 6" stroke="#333333" stroke-width="1.5" fill="none"/>
+  <rect x="166" y="86" width="12" height="10" fill="#fddcbd" stroke="#cfb096" stroke-width="1.5"/>
+  <circle cx="150" cy="100" r="8" fill="#fddcbd" stroke="#cfb096" stroke-width="2"/>
+  <circle cx="194" cy="100" r="8" fill="#fddcbd" stroke="#cfb096" stroke-width="2"/>
+  <rect x="144" y="102" width="56" height="72" rx="18" fill="#24445e" stroke="#1c3550" stroke-width="2"/>
+  <!-- arm across chest, hand clutching -->
+  <path d="M 158 112 L 186 128" stroke="#fddcbd" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <circle cx="188" cy="130" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1.5"/>
+
+  <!-- pulsing heart on the chest -->
+  <circle cx="196" cy="126" r="9" fill="none" stroke="#b00020" stroke-width="2">
+    <animate attributeName="r" values="8;14;8" dur="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.15;0.8" dur="0.9s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M 196 130 Q 190 122 192 116 Q 196 112 196 120 Q 196 112 200 116 Q 202 122 196 130 Z" fill="#e9967a" stroke="#c96a50" stroke-width="1.2">
+    <animate attributeName="opacity" values="1;0.55;1" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- legs (seated) -->
+  <g fill="#24445e" stroke="#1c3550" stroke-width="2">
+    <rect x="150" y="172" width="16" height="40" rx="8" transform="rotate(-6 158 192)"/>
+    <rect x="178" y="172" width="16" height="40" rx="8" transform="rotate(4 186 192)"/>
+  </g>
+  <path d="M 150 214 L 138 214 M 194 214 L 206 214" stroke="#26303c" stroke-width="4" stroke-linecap="round"/>
+
+  <g font-size="15" fill="#333333">
+    <text x="58" y="60" text-anchor="middle" font-weight="700" fill="#b00020">Call 911 —</text>
+    <text x="58" y="78" text-anchor="middle" fill="#b00020">don't drive</text>
+    <text x="318" y="120" text-anchor="middle" font-weight="600" fill="#0e7c7b">chew 1 adult</text>
+    <text x="318" y="138" text-anchor="middle" fill="#0e7c7b">aspirin</text>
+    <text x="200" y="292" text-anchor="middle" fill="#5b6470">if not allergic — note the time symptoms started</text>
+  </g>
+</svg>

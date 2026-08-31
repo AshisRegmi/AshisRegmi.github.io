@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Fracture: do not move the injured part, apply a cold pack, and immobilize with a splint or sling" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- injured forearm (from elbow to hand), in a splint -->
+  <g stroke="#cfb096" stroke-width="2">
+    <!-- upper arm -->
+    <rect x="96" y="132" width="72" height="40" rx="18" fill="#fddcbd"/>
+    <!-- elbow -->
+    <circle cx="166" cy="152" r="16" fill="#fddcbd"/>
+    <!-- forearm (angled down) -->
+    <rect x="160" y="158" width="120" height="40" rx="18" fill="#fddcbd" transform="rotate(18 220 178)"/>
+    <!-- hand -->
+    <rect x="280" y="184" width="28" height="32" rx="11" fill="#fddcbd" transform="rotate(24 294 200)"/>
+  </g>
+  <!-- fracture site (marked) -->
+  <circle cx="232" cy="206" r="13" fill="none" stroke="#b00020" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <!-- splint board -->
+  <rect x="150" y="226" width="140" height="18" rx="4" fill="#f4e4d4" stroke="#cfb096" stroke-width="2"/>
+  <!-- bandage wraps -->
+  <g fill="#ffffff" stroke="#d5dce5" stroke-width="1.5">
+    <rect x="176" y="196" width="14" height="50" rx="4" transform="rotate(14 183 221)"/>
+    <rect x="252" y="196" width="14" height="50" rx="4" transform="rotate(14 259 221)"/>
+  </g>
+  <!-- sling strap -->
+  <path d="M 200 108 L 232 150" stroke="#24445e" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- pulsing support marker above and below -->
+  <g>
+    <path d="M 178 118 L 178 132" stroke="#0e7c7b" stroke-width="3" fill="none">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 262 118 L 262 132" stroke="#0e7c7b" stroke-width="3" fill="none">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="220" y="120" text-anchor="middle" font-size="12.5" fill="#0e7c7b" font-weight="600">immobilize above + below</text>
+
+  <g font-size="15" fill="#333333">
+    <text x="64" y="152" text-anchor="middle" font-weight="600" fill="#b00020">Do not move</text>
+    <text x="64" y="170" text-anchor="middle" fill="#b00020">or straighten</text>
+    <text x="96" y="286" text-anchor="middle" fill="#5b6470">cold pack</text>
+    <text x="330" y="286" text-anchor="middle" fill="#5b6470">see a doctor</text>
+  </g>
+</svg>

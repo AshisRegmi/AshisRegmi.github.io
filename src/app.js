@@ -102,10 +102,28 @@ function openTopic(id) {
     ? `<a class="detail-call" href="tel:${emergencyNumber}" role="button">Call ${emergencyNumber} now</a>`
     : '';
 
+  // Procedure illustration (static diagram) shown above the step list when available.
+  const illustration = t.illustration
+    ? `<figure class="detail-illustration">
+         <img src="assets/illustrations/${t.illustration}.svg" alt="Illustration showing how to perform ${escapeHtml(t.title)}" loading="lazy" decoding="async" />
+         <figcaption class="detail-illustration-cap">Procedure</figcaption>
+       </figure>`
+    : '';
+
+  // Animated demonstration ("flash animation") when available.
+  const animation = t.animation
+    ? `<figure class="detail-animation">
+         <img src="assets/illustrations/${t.animation}.svg" alt="Animated demonstration of ${escapeHtml(t.title)}" loading="lazy" decoding="async" />
+         <figcaption class="detail-animation-cap"><span class="live-dot" aria-hidden="true"></span> Animated demonstration</figcaption>
+       </figure>`
+    : '';
+
   detailBody.innerHTML = `
     <p class="detail-sev sev-${t.severity}">${SEVERITY_LABEL[t.severity] || t.severity}</p>
     <p class="detail-summary">${escapeHtml(t.summary)}</p>
     ${callNote}
+    ${illustration}
+    ${animation}
     <h3 class="detail-steps-heading">What to do</h3>
     <ol class="detail-steps">${steps}</ol>
     <p class="detail-disclaimer">Quick reference only — not a substitute for certified training or professional care. When in doubt, call ${emergencyNumber}.</p>

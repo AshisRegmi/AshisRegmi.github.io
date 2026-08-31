@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Severe bleeding: apply firm direct pressure with a clean cloth, add layers without removing soaked cloth, tourniquet two to three inches above the wound" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#fbfaf7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- the injured arm, from shoulder to hand, lying on a surface -->
+  <!-- shoulder cap (left) -->
+  <ellipse cx="66" cy="180" rx="24" ry="30" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- upper arm -->
+  <rect x="66" y="168" width="110" height="40" rx="20" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- forearm (slightly lower) -->
+  <rect x="150" y="176" width="130" height="40" rx="20" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- hand -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <rect x="272" y="180" width="34" height="34" rx="12" transform="rotate(-6 289 197)"/>
+  </g>
+
+  <!-- wound on the forearm (larger than the pad so bleeding is visible) -->
+    <ellipse cx="212" cy="196" rx="30" ry="11" fill="#b00020"/>
+    <ellipse cx="212" cy="196" rx="20" ry="5" fill="#7a0008"/>
+    <!-- blood drips -->
+    <path d="M 228 202 q 6 8 -1 14" stroke="#b00020" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="229" cy="217" r="2.5" fill="#b00020"/>
+
+  <!-- cloth pad over the wound -->
+  <rect x="192" y="184" width="40" height="24" rx="5" fill="#ffffff" stroke="#cfd4dc" stroke-width="1.5"/>
+
+  <!-- pressing hand (with fingers) above the wound -->
+    <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 0 7; 0 0" keyTimes="0; 0.2; 1" dur="0.7s" repeatCount="indefinite"/>
+      <rect x="194" y="164" width="36" height="16" rx="8"/>
+    <rect x="196" y="156" width="7" height="14" rx="3.5"/>
+    <rect x="205" y="154" width="7" height="16" rx="3.5"/>
+    <rect x="214" y="154" width="7" height="16" rx="3.5"/>
+    <rect x="223" y="156" width="7" height="14" rx="3.5"/>
+  </g>
+  <!-- downward pressure arrow -->
+  <path d="M 212 122 L 212 150" stroke="#b00020" stroke-width="3.5" fill="none"/>
+  <path d="M 205 142 l 7 9 l 7 -9" fill="#b00020"/>
+
+  <!-- tourniquet band on upper arm (above the wound) -->
+  <g>
+    <rect x="116" y="166" width="14" height="44" rx="4" fill="#0e7c7b" stroke="#0a5f5e" stroke-width="2"/>
+    <path d="M 123 166 L 123 146" stroke="#0e7c7b" stroke-width="2.5"/>
+  </g>
+
+  <g font-size="14" fill="#26303c">
+    <text x="106" y="106" text-anchor="middle" font-weight="600" fill="#b00020">Firm direct pressure</text>
+    <text x="262" y="252" text-anchor="middle" fill="#0e7c7b">Add layers — don't</text>
+    <text x="262" y="268" text-anchor="middle" fill="#0e7c7b">remove cloth</text>
+    <text x="70" y="280" text-anchor="middle" fill="#5b6470">Tourniquet 2–3 in</text>
+    <text x="70" y="296" text-anchor="middle" fill="#5b6470">above wound</text>
+  </g>
+</svg>

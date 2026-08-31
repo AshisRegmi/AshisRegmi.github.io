@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Infant choking: hold the baby face-down along your forearm, head lower than chest, give five firm back slaps between the shoulder blades" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#fbfaf7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- rescuer's forearm (horizontal, supporting) -->
+  <rect x="34" y="172" width="330" height="36" rx="18" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <rect x="270" y="172" width="70" height="36" rx="14" fill="#0e7c7b" stroke="#0a5f5e" stroke-width="2"/>
+
+  <!-- ===== INFANT, face-down along forearm, head to the LEFT and LOWER ===== -->
+  <!-- body (onesie) -->
+  <ellipse cx="224" cy="176" rx="44" ry="20" fill="#f3d1b2" stroke="#c78e63" stroke-width="2"/>
+  <!-- diaper/bottom -->
+  <rect x="252" y="166" width="30" height="26" rx="12" fill="#ffffff" stroke="#cfd4dc" stroke-width="1.5"/>
+  <!-- legs (chubby) -->
+  <g fill="#f3d1b2" stroke="#c78e63" stroke-width="1.5">
+    <rect x="276" y="164" width="15" height="30" rx="7" transform="rotate(10 283 179)"/>
+    <rect x="290" y="164" width="15" height="30" rx="7" transform="rotate(18 297 179)"/>
+  </g>
+  <!-- infant head (bigger, hanging slightly lower) -->
+  <circle cx="156" cy="188" r="22" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- hair -->
+  <path d="M 138 180 a22 22 0 0 1 28 -20 l -12 4 a18 18 0 0 0 -16 16 z" fill="#5b443a"/>
+  <!-- face: closed eye + a hint of nose, facing down-left -->
+  <line x1="146" y1="184" x2="152" y2="184" stroke="#5b4a3a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 134 188 q -4 1 -3 5" fill="#f1c4a0" stroke="#c78e63" stroke-width="1.5"/>
+
+  <!-- rescuer's supporting hand under the infant's jaw/chest -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <rect x="120" y="160" width="20" height="16" rx="8" transform="rotate(16 130 168)"/>
+  </g>
+
+  <!-- rescuer's slapping hand above the infant's back -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 0 10; 0 0" keyTimes="0; 0.2; 1" dur="0.7s" repeatCount="indefinite"/>
+      <ellipse cx="248" cy="138" rx="18" ry="12" transform="rotate(-16 248 138)"/>
+    </g>
+  <!-- slap motion arrow -->
+  <path d="M 252 104 L 252 124" stroke="#b00020" stroke-width="3" fill="none"/>
+  <path d="M 245 116 l 7 9 l 7 -9" fill="#b00020"/>
+
+  <g font-size="14" fill="#26303c">
+    <text x="78" y="96" text-anchor="middle" font-weight="600" fill="#0e7c7b">Head lower</text>
+    <text x="78" y="113" text-anchor="middle" fill="#0e7c7b">than chest</text>
+    <text x="262" y="282" text-anchor="middle" font-weight="600" fill="#b00020">5 firm back slaps</text>
+    <text x="262" y="298" text-anchor="middle" fill="#5b6470">between shoulder blades</text>
+  </g>
+</svg>

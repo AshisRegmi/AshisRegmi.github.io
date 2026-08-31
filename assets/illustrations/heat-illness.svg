@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Heat illness: move to a cool shaded place, loosen clothing, and cool rapidly with a fan and cool wet cloths" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- ground -->
+  <line x1="200" y1="262" x2="386" y2="262" stroke="#cfd4dc" stroke-width="2"/>
+
+  <!-- FAN (top-left) blowing toward the person -->
+  <circle cx="96" cy="86" r="30" fill="#eef2f6" stroke="#8a93a6" stroke-width="2.5"/>
+  <g stroke="#8a93a6" stroke-width="4" stroke-linecap="round">
+    <line x1="96" y1="64" x2="96" y2="80">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 96 86; 360 96 86" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="96" y1="92" x2="96" y2="108">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 96 86; 360 96 86" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="74" y1="86" x2="90" y2="86">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 96 86; 360 96 86" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="102" y1="86" x2="118" y2="86">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 96 86; 360 96 86" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- cool air flowing from the fan onto the person (animated) -->
+  <g stroke="#4ea1ff" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 128 98 Q 160 92 180 118 Q 198 142 214 168">
+      <animate attributeName="opacity" values="0.15;0.85;0.15" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 124 112 Q 158 104 182 132 Q 200 154 222 182">
+      <animate attributeName="opacity" values="0.15;0.85;0.15" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 120 126 Q 156 118 184 146 Q 206 166 230 196">
+      <animate attributeName="opacity" values="0.15;0.85;0.15" dur="1.2s" begin="0.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- PERSON lying, being cooled -->
+  <circle cx="262" cy="238" r="18" fill="#fddcbd" stroke="#cfb096" stroke-width="2"/>
+  <path d="M 246 230 a18 18 0 0 1 18 -13 l -8 4 a14 14 0 0 0 -10 9 z" fill="#44332c"/>
+  <line x1="254" y1="232" x2="262" y2="232" stroke="#5b4a3a" stroke-width="2" stroke-linecap="round"/>
+  <rect x="248" y="220" width="120" height="46" rx="20" fill="#24445e" stroke="#1c3550" stroke-width="2"/>
+  <path d="M 300 250 L 362 256" stroke="#24445e" stroke-width="16" stroke-linecap="round" fill="none"/>
+
+  <!-- wet cloths (distinct cool wraps) -->
+  <g stroke="#4ea1ff" stroke-width="1.6">
+    <rect x="252" y="196" width="30" height="14" rx="6" fill="#7fd4e3"/>
+    <line x1="260" y1="199" x2="260" y2="207" stroke="#4a90c8" stroke-width="1.5"/>
+  </g>
+  <g stroke="#4ea1ff" stroke-width="1.6">
+    <rect x="286" y="222" width="22" height="32" rx="8" fill="#7fd4e3"/>
+    <line x1="297" y1="226" x2="297" y2="250" stroke="#4a90c8" stroke-width="1.5"/>
+  </g>
+  <path d="M 256 200 L 234 182" stroke="#0e7c7b" stroke-width="1.4" fill="none"/>
+  <circle cx="234" cy="182" r="2" fill="#0e7c7b"/>
+  <text x="234" y="172" text-anchor="middle" font-size="12" fill="#0e7c7b" font-weight="600">wet cloths</text>
+
+  <g font-size="15" fill="#333333">
+    <text x="84" y="168" text-anchor="middle" font-weight="600" fill="#0e7c7b">Cool shade,</text>
+    <text x="84" y="186" text-anchor="middle" fill="#0e7c7b">loosen clothes</text>
+    <text x="316" y="90" text-anchor="middle" font-weight="600" fill="#b00020">Fan the body</text>
+    <text x="200" y="288" text-anchor="middle" font-size="12.5" fill="#5b6470">Confused or fainting? Call 911 — heat stroke</text>
+  </g>
+</svg>

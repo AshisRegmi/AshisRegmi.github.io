@@ -29,6 +29,8 @@ export const SEVERITY_LEVELS = ['critical', 'serious', 'minor'];
 export const topics = [
   {
     id: 'cpr-adult',
+        illustration: 'cpr-adult',
+        animation: 'cpr-anatomy',
     title: 'CPR — Adult',
     category: 'Cardiac & Breathing',
     severity: 'critical',
@@ -45,6 +47,7 @@ export const topics = [
   },
   {
     id: 'cpr-child',
+    illustration: 'cpr-child',
     title: 'CPR — Child (1–puberty)',
     category: 'Cardiac & Breathing',
     severity: 'critical',
@@ -61,6 +64,7 @@ export const topics = [
   },
   {
     id: 'choking-adult',
+    illustration: 'heimlich-adult',
     title: 'Choking — Conscious Adult/Child',
     category: 'Cardiac & Breathing',
     severity: 'critical',
@@ -77,6 +81,7 @@ export const topics = [
   },
   {
     id: 'choking-infant',
+    illustration: 'choking-infant',
     title: 'Choking — Infant (under 1)',
     category: 'Cardiac & Breathing',
     severity: 'critical',
@@ -93,6 +98,7 @@ export const topics = [
   },
   {
     id: 'severe-bleeding',
+    illustration: 'bleeding-pressure',
     title: 'Severe Bleeding',
     category: 'Trauma & Wounds',
     severity: 'critical',
@@ -109,6 +115,7 @@ export const topics = [
   },
   {
     id: 'burns',
+    illustration: 'burns',
     title: 'Burns',
     category: 'Trauma & Wounds',
     severity: 'serious',
@@ -125,6 +132,7 @@ export const topics = [
   },
   {
     id: 'heart-attack',
+    illustration: 'heart-attack',
     title: 'Heart Attack',
     category: 'Cardiac & Breathing',
     severity: 'critical',
@@ -141,6 +149,7 @@ export const topics = [
   },
   {
     id: 'stroke',
+    illustration: 'stroke-fast',
     title: 'Stroke',
     category: 'Neurological',
     severity: 'critical',
@@ -157,6 +166,7 @@ export const topics = [
   },
   {
     id: 'seizure',
+    illustration: 'recovery-position',
     title: 'Seizure',
     category: 'Neurological',
     severity: 'serious',
@@ -173,6 +183,7 @@ export const topics = [
   },
   {
     id: 'anaphylaxis',
+    illustration: 'epipen',
     title: 'Severe Allergic Reaction (Anaphylaxis)',
     category: 'Medical & Poisoning',
     severity: 'critical',
@@ -189,6 +200,7 @@ export const topics = [
   },
   {
     id: 'poisoning',
+    illustration: 'poisoning',
     title: 'Poisoning',
     category: 'Medical & Poisoning',
     severity: 'critical',
@@ -205,6 +217,7 @@ export const topics = [
   },
   {
     id: 'fracture',
+    illustration: 'fracture',
     title: 'Fractures & Sprains',
     category: 'Trauma & Wounds',
     severity: 'serious',
@@ -221,6 +234,7 @@ export const topics = [
   },
   {
     id: 'concussion',
+    illustration: 'concussion',
     title: 'Head Injury & Concussion',
     category: 'Trauma & Wounds',
     severity: 'serious',
@@ -237,6 +251,7 @@ export const topics = [
   },
   {
     id: 'hypothermia',
+    illustration: 'hypothermia',
     title: 'Hypothermia',
     category: 'Environmental',
     severity: 'serious',
@@ -253,6 +268,7 @@ export const topics = [
   },
   {
     id: 'frostbite',
+    illustration: 'frostbite',
     title: 'Frostbite',
     category: 'Environmental',
     severity: 'serious',
@@ -269,6 +285,7 @@ export const topics = [
   },
   {
     id: 'heat-illness',
+    illustration: 'heat-illness',
     title: 'Heat Exhaustion & Heat Stroke',
     category: 'Environmental',
     severity: 'critical',
@@ -285,6 +302,7 @@ export const topics = [
   },
   {
     id: 'drowning',
+    illustration: 'drowning',
     title: 'Drowning / Near-Drowning',
     category: 'Cardiac & Breathing',
     severity: 'critical',
@@ -301,6 +319,7 @@ export const topics = [
   },
   {
     id: 'diabetic',
+    illustration: 'diabetic',
     title: 'Diabetic Emergency',
     category: 'Medical & Poisoning',
     severity: 'serious',
@@ -317,6 +336,7 @@ export const topics = [
   },
   {
     id: 'shock',
+    illustration: 'shock-position',
     title: 'Shock',
     category: 'Trauma & Wounds',
     severity: 'critical',
@@ -333,6 +353,7 @@ export const topics = [
   },
   {
     id: 'fainting',
+    illustration: 'recovery-position',
     title: 'Fainting',
     category: 'Neurological',
     severity: 'minor',

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="EpiPen: press the auto-injector firmly against the outer thigh at a right angle and hold three seconds" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#fbfaf7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- a person's leg, side view: hip → thigh → knee → lower leg -->
+  <!-- thigh -->
+  <path d="M 130 120 Q 190 96 226 128 L 226 214 Q 190 238 150 224 Z" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- shorts hem -->
+  <rect x="126" y="102" width="100" height="26" rx="8" fill="#24445e"/>
+  <!-- knee -->
+  <circle cx="206" cy="222" r="13" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- lower leg -->
+  <rect x="176" y="230" width="56" height="52" rx="20" fill="#f1c4a0" stroke="#c78e63" stroke-width="2" transform="rotate(4 204 256)"/>
+  <!-- foot -->
+  <ellipse cx="214" cy="288" rx="16" ry="8" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- shoe -->
+  <path d="M 202 288 L 232 288 L 232 286" stroke="#26303c" stroke-width="3" fill="none"/>
+
+  <!-- outer-thigh injection zone -->
+  <circle cx="182" cy="186" r="34" fill="none" stroke="#b00020" stroke-width="2.5" stroke-dasharray="6 5"/>
+
+  <!-- auto-injector pressed at 90° to the thigh -->
+    <g>
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 0 6; 0 6; 0 0" keyTimes="0; 0.25; 0.85; 1" dur="1.6s" repeatCount="indefinite"/>
+      <rect x="174" y="108" width="16" height="56" rx="8" fill="#f4b400" stroke="#c99400" stroke-width="2"/>
+    <rect x="176" y="100" width="12" height="12" rx="6" fill="#e07d3b"/>
+    <rect x="176" y="160" width="12" height="6" fill="#4a3b32"/>
+    <rect x="179" y="164" width="6" height="8" fill="#9aa4b0"/>
+  </g>
+  <!-- right-angle marker -->
+  <path d="M 206 158 l 0 16 l -16 0" stroke="#b00020" stroke-width="2" fill="none"/>
+
+  <g font-size="14" fill="#26303c">
+    <text x="72" y="150" text-anchor="middle" font-weight="600" fill="#b00020">Outer thigh,</text>
+    <text x="72" y="168" text-anchor="middle" fill="#b00020">right angle</text>
+    <text x="318" y="150" text-anchor="middle" fill="#0e7c7b">Hold 3 sec</text>
+    <text x="318" y="168" text-anchor="middle" fill="#0e7c7b">then massage</text>
+    <text x="200" y="292" text-anchor="middle" fill="#5b6470">Can inject through clothing</text>
+  </g>
+</svg>

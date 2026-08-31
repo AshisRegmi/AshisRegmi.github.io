@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Shock: lay the person flat, raise the legs about twelve inches, keep them warm, and call 911" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#fbfaf7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- ground -->
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#cfd4dc" stroke-width="2"/>
+
+  <!-- ===== PERSON lying flat on back, head LEFT, legs RAISED ===== -->
+  <!-- head (face up) -->
+  <circle cx="76" cy="232" r="20" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <path d="M 58 224 a20 20 0 0 1 22 -16 l -10 4 a16 16 0 0 0 -12 12 z" fill="#44332c"/>
+  <line x1="68" y1="224" x2="76" y2="224" stroke="#5b4a3a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 78 214 q 3 4 -1 8" fill="#f1c4a0" stroke="#c78e63" stroke-width="1.5"/>
+  <!-- torso (flat) -->
+  <rect x="88" y="204" width="176" height="58" rx="26" fill="#24445e" stroke="#1c3550" stroke-width="2"/>
+  <!-- blanket over lower torso -->
+  <rect x="150" y="212" width="120" height="20" rx="9" fill="#0e7c7b" opacity="0.28"/>
+  <!-- arm at side -->
+  <path d="M 110 246 L 200 252" stroke="#f1c4a0" stroke-width="11" stroke-linecap="round" fill="none"/>
+
+  <!-- raised legs -->
+  <g stroke="#0e7c7b" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 0 -6; 0 0" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M 250 240 L 288 208 L 334 206"/>
+  </g>
+  <!-- feet -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <ellipse cx="334" cy="204" rx="11" ry="8"/>
+    <ellipse cx="316" cy="206" rx="10" ry="7"/>
+  </g>
+  <!-- support under the raised legs -->
+  <rect x="276" y="222" width="30" height="40" rx="10" fill="#f1c4a0" stroke="#c78e63" stroke-width="2" opacity="0.55"/>
+
+  <!-- raise arrow -->
+  <path d="M 320 150 L 320 176" stroke="#b00020" stroke-width="3" fill="none"/>
+  <path d="M 313 168 l 7 9 l 7 -9" fill="#b00020"/>
+  <text x="344" y="160" text-anchor="middle" font-size="12" fill="#b00020" font-weight="600">~12 in</text>
+
+  <g font-size="14" fill="#26303c">
+    <text x="88" y="120" text-anchor="middle" font-weight="600" fill="#b00020">Lay flat,</text>
+    <text x="88" y="138" text-anchor="middle" fill="#b00020">raise legs</text>
+  </g>
+</svg>

@@ -387,6 +387,49 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .detail-body strong { font-weight: 800; }
 .detail-empty { color: var(--text-muted); }
 
+/* ---------- Procedure illustrations & "flash" animation ---------- */
+.detail-illustration,
+.detail-animation {
+  margin: 1.1rem 0;
+  padding: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.detail-illustration img,
+.detail-animation img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 4px);
+}
+.detail-illustration-cap,
+.detail-animation-cap {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.detail-animation-cap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+.live-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--urgent);
+  animation: pulse 0.55s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%      { opacity: 1;   transform: scale(1.15); }
+}
+
 /* ---------- No-JS note ---------- */
 .noscript-note {
   max-width: 640px;

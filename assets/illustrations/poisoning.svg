@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Poisoning: rinse skin or eyes under running water for fifteen to twenty minutes and call poison control" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- faucet + flowing water (animated) -->
+  <g stroke="#8a93a6" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 150 34 L 150 58 L 212 58 L 212 80"/>
+  </g>
+  <line x1="212" y1="84" x2="212" y2="168" stroke="#4ea1ff" stroke-width="11" stroke-dasharray="8 8">
+    <animate attributeName="stroke-dashoffset" values="0; -16" dur="0.5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="212" y1="84" x2="212" y2="168" stroke="#cfe4ff" stroke-width="20" opacity="0.4"/>
+
+  <!-- hand being rinsed -->
+  <g fill="#fddcbd" stroke="#cfb096" stroke-width="2">
+    <rect x="180" y="168" width="64" height="34" rx="14" transform="rotate(8 212 185)"/>
+    <rect x="182" y="162" width="8" height="16" rx="4"/>
+    <rect x="192" y="159" width="8" height="18" rx="4"/>
+    <rect x="202" y="159" width="8" height="18" rx="4"/>
+    <rect x="212" y="159" width="8" height="18" rx="4"/>
+    <rect x="222" y="162" width="8" height="16" rx="4"/>
+  </g>
+  <!-- splash -->
+  <g fill="none" stroke="#4ea1ff" stroke-width="2">
+    <path d="M 196 210 q -6 8 0 14 M 228 210 q 6 8 0 14"/>
+  </g>
+
+  <g font-size="15" fill="#333333">
+    <text x="200" y="26" text-anchor="middle" font-weight="700" fill="#0e7c7b">Rinse for 15–20 minutes</text>
+    <text x="200" y="250" text-anchor="middle" font-weight="700" fill="#b00020">Poison Control</text>
+    <text x="200" y="272" text-anchor="middle" font-weight="700" fill="#b00020">1-800-222-1222</text>
+    <text x="200" y="294" text-anchor="middle" fill="#5b6470">Do not induce vomiting</text>
+  </g>
+</svg>

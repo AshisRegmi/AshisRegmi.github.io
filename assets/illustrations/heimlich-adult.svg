@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Heimlich maneuver: stand behind a choking person, fist just above the navel, thrust inward and upward" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#fbfaf7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- ground -->
+  <line x1="22" y1="268" x2="378" y2="268" stroke="#cfd4dc" stroke-width="2"/>
+
+  <!-- ===== VICTIM standing, facing LEFT, leaning forward, hands at throat ===== -->
+  <!-- head (profile facing left), leaning forward -->
+  <circle cx="150" cy="66" r="16" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <path d="M 138 56 a16 16 0 0 1 26 0 z" fill="#44332c"/>
+  <path d="M 133 66 q -6 1 -4 7 q 3 -1 5 -6 z" fill="#f1c4a0" stroke="#c78e63" stroke-width="1.5"/>
+  <circle cx="141" cy="62" r="1.6" fill="#3c2a22"/>
+  <!-- neck -->
+  <rect x="144" y="80" width="13" height="14" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- hands raised to throat (choking sign) -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <circle cx="136" cy="96" r="6"/>
+    <circle cx="150" cy="98" r="6"/>
+  </g>
+  <!-- torso, leaning forward -->
+  <path d="M 142 92 L 176 100 L 172 190 L 132 186 Z" fill="#24445e" stroke="#1c3550" stroke-width="2"/>
+  <!-- victim arms bent up toward throat -->
+  <g stroke="#f1c4a0" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M 140 130 L 124 104 L 120 94"/>
+  </g>
+  <!-- legs -->
+  <g fill="#24445e" stroke="#1c3550" stroke-width="2">
+    <rect x="134" y="186" width="15" height="62" rx="7" transform="rotate(4 141 217)"/>
+    <rect x="156" y="186" width="15" height="62" rx="7" transform="rotate(-2 163 217)"/>
+  </g>
+  <!-- victim feet -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <ellipse cx="136" cy="266" rx="11" ry="6"/>
+    <ellipse cx="166" cy="266" rx="11" ry="6"/>
+  </g>
+
+  <!-- ===== RESCUER standing BEHIND, arms wrapped around ===== -->
+  <!-- head (facing left toward victim's back) -->
+  <circle cx="252" cy="60" r="16" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <path d="M 240 50 a16 16 0 0 1 26 0 z" fill="#3c2a22"/>
+  <path d="M 235 60 q -6 1 -4 7 q 3 -1 5 -6 z" fill="#f1c4a0" stroke="#c78e63" stroke-width="1.5"/>
+  <circle cx="243" cy="56" r="1.6" fill="#3c2a22"/>
+  <rect x="246" y="74" width="13" height="13" fill="#f1c4a0" stroke="#c78e63" stroke-width="2"/>
+  <!-- torso -->
+  <path d="M 240 86 L 268 88 L 268 184 L 240 184 Z" fill="#0e7c7b" stroke="#0a5f5e" stroke-width="2"/>
+  <!-- rescuer arms wrapping forward around victim's abdomen -->
+  <g stroke="#0e7c7b" stroke-width="11" stroke-linecap="round" fill="none">
+    <path d="M 246 96 C 226 128 196 146 172 158"/>
+    <path d="M 258 96 C 236 128 206 148 184 160"/>
+  </g>
+  <!-- hands meeting above victim's navel (fist under clasping hand) -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; -4 -8; 0 0" keyTimes="0; 0.2; 1" dur="0.7s" repeatCount="indefinite"/>
+    <circle cx="170" cy="160" r="10"/>
+    <circle cx="170" cy="176" r="6"/>
+  </g>
+  <!-- rescuer legs -->
+  <g fill="#0e7c7b" stroke="#0a5f5e" stroke-width="2">
+    <rect x="242" y="184" width="14" height="62" rx="7" transform="rotate(3 249 215)"/>
+    <rect x="260" y="184" width="14" height="62" rx="7" transform="rotate(-3 267 215)"/>
+  </g>
+  <!-- rescuer feet -->
+  <g fill="#f1c4a0" stroke="#c78e63" stroke-width="2">
+    <ellipse cx="244" cy="266" rx="10" ry="6"/>
+    <ellipse cx="268" cy="266" rx="10" ry="6"/>
+  </g>
+
+  <!-- inward and upward thrust arrows at the fist -->
+  <g stroke="#b00020" stroke-width="3" fill="none">
+    <path d="M 150 190 L 150 214"/>
+  </g>
+  <path d="M 143 206 l -7 8 l 7 8" fill="#b00020"/>
+  <path d="M 186 154 q 8 8 -2 12" fill="#b00020"/>
+
+  <g font-size="13" fill="#26303c">
+    <text x="66" y="150" text-anchor="middle" font-weight="600" fill="#0e7c7b">Fist just</text>
+    <text x="66" y="166" text-anchor="middle" fill="#0e7c7b">above navel</text>
+    <text x="330" y="128" text-anchor="middle" font-weight="600" fill="#b00020">Thrust</text>
+    <text x="330" y="144" text-anchor="middle" fill="#b00020">inward &amp; up</text>
+  </g>
+</svg>

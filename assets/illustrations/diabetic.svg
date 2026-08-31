@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Diabetic emergency: if the person is conscious and can swallow, give sugar such as juice, glucose tablets, or candy, and recheck in fifteen minutes" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="400" height="300" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="399" height="299" rx="16" fill="none" stroke="#e6e1d8" stroke-width="1"/>
+
+  <!-- juice cup -->
+  <path d="M 120 150 L 136 210 L 184 210 L 200 150 Z" fill="#f4b400" stroke="#c99400" stroke-width="2"/>
+  <rect x="116" y="150" width="88" height="12" rx="4" fill="#e07d3b"/>
+  <path d="M 120 150 L 200 150" stroke="#c99400" stroke-width="2"/>
+  <!-- straw -->
+  <line x1="172" y1="128" x2="180" y2="156" stroke="#b00020" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- glucose tablets -->
+  <g fill="#ffffff" stroke="#c9d0d9" stroke-width="1.5">
+    <rect x="72" y="134" width="42" height="17" rx="6" transform="rotate(-12 93 142)"/>
+    <rect x="74" y="154" width="42" height="17" rx="6" transform="rotate(6 95 162)"/>
+  </g>
+
+  <!-- pulsing "give sugar" arrow -->
+  <g>
+    <path d="M 260 120 L 260 170" stroke="#b00020" stroke-width="4" fill="none">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 252 160 l 8 10 l 8 -10" fill="#b00020">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="278" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#b00020">give sugar</text>
+
+  <!-- recheck clock -->
+  <text x="240" y="230" text-anchor="middle" font-size="13" fill="#0e7c7b" font-weight="600">recheck in 15 min</text>
+  <circle cx="240" cy="200" r="16" fill="#ffffff" stroke="#26303c" stroke-width="2"/>
+  <path d="M 240 200 L 240 190 M 240 200 L 250 204" stroke="#0e7c7b" stroke-width="2" stroke-linecap="round"/>
+
+  <g font-size="15" fill="#333333">
+    <text x="52" y="236" text-anchor="middle" fill="#5b6470">juice, glucose</text>
+    <text x="52" y="254" text-anchor="middle" fill="#5b6470">or candy</text>
+    <text x="200" y="288" text-anchor="middle" fill="#5b6470">only if conscious and able to swallow</text>
+  </g>
+</svg>

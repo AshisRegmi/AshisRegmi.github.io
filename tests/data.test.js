@@ -12,6 +12,13 @@ import {
   getTopicById,
 } from '../src/data.js';
 
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+import { existsSync } from 'node:fs';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ILLUSTRATIONS_DIR = join(__dirname, '..', 'assets', 'illustrations');
+
 test('emergency number is 911 for US/Canada', () => {
   assert.equal(emergencyNumber, '911');
   assert.equal(region, 'US/Canada');
@@ -96,4 +103,23 @@ test('getTopicById returns the matching topic and undefined otherwise', () => {
   assert.equal(getTopicById(first.id).id, first.id);
   assert.equal(getTopicById('does-not-exist'), undefined);
   assert.equal(getTopicById(), undefined);
+});
+
+test('every illustration/animation reference has a matching SVG asset file', () => {
+  for (const t of topics) {
+    if (t.illustration) {
+      const p = join(ILLUSTRATIONS_DIR, `${t.illustration}.svg`);
+      assert.ok(
+        existsSync(p),
+        `missing illustration ${t.illustration}.svg referenced by ${t.id}`
+      );
+    }
+    if (t.animation) {
+      const p = join(ILLUSTRATIONS_DIR, `${t.animation}.svg`);
+      assert.ok(
+        existsSync(p),
+        `missing animation ${t.animation}.svg referenced by ${t.id}`
+      );
+    }
+  }
 });

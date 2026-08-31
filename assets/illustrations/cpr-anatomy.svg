@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" role="img" aria-label="Indirect heart massage (CPR): locate the sternum, place the heel of the hand, interlock fingers with straight arms, compress the chest so the heart is squeezed toward the spine" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <rect width="560" height="400" fill="#ffffff"/>
+  <title>Indirect Heart Massage (CPR)</title>
+  <text x="280" y="28" text-anchor="middle" font-size="19" font-weight="800" fill="#333333">Indirect Heart Massage (CPR)</text>
+
+  <!-- ============ TOP: 3 step panels ============ -->
+  <!-- Panel 1 -->
+  <rect x="14" y="40" width="172" height="142" rx="10" fill="#ffffff" stroke="#e6e1d8" stroke-width="1"/>
+  <circle cx="30" cy="54" r="11" fill="#f4c2c2"/>
+  <text x="30" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#333333">1</text>
+  <!-- torso (shirtless, front) -->
+  <circle cx="100" cy="76" r="12" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <rect x="94" y="86" width="12" height="8" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <circle cx="76" cy="92" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <circle cx="124" cy="92" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <rect x="70" y="94" width="60" height="60" rx="16" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <path d="M 76 108 q 24 -6 48 0 M 76 120 q 24 -6 48 0 M 78 132 q 22 -5 44 0" stroke="#cfb096" stroke-width="1" fill="none"/>
+  <!-- point of pressure (2 fingers on lower sternum) -->
+  <circle cx="100" cy="132" r="10" fill="none" stroke="#e9967a" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <g fill="#fddcbd" stroke="#cfb096" stroke-width="1">
+    <rect x="112" y="124" width="5" height="16" rx="2.5" transform="rotate(16 114 132)"/>
+    <rect x="118" y="122" width="5" height="16" rx="2.5" transform="rotate(22 120 130)"/>
+  </g>
+  <text x="100" y="172" text-anchor="middle" font-size="10.5" fill="#333333">Find the point on the</text>
+  <text x="100" y="183" text-anchor="middle" font-size="10.5" fill="#333333">sternum — 2 fingers above</text>
+
+  <!-- Panel 2 -->
+  <rect x="194" y="40" width="172" height="142" rx="10" fill="#ffffff" stroke="#e6e1d8" stroke-width="1"/>
+  <circle cx="210" cy="54" r="11" fill="#f4c2c2"/>
+  <text x="210" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#333333">2</text>
+  <circle cx="280" cy="76" r="12" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <rect x="274" y="86" width="12" height="8" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <circle cx="256" cy="92" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <circle cx="304" cy="92" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <rect x="250" y="94" width="60" height="60" rx="16" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <path d="M 256 108 q 24 -6 48 0 M 256 120 q 24 -6 48 0 M 258 132 q 22 -5 44 0" stroke="#cfb096" stroke-width="1" fill="none"/>
+  <!-- heel of palm on center of chest -->
+  <g fill="#fddcbd" stroke="#cfb096" stroke-width="1.2">
+    <rect x="262" y="116" width="36" height="16" rx="7" transform="rotate(-4 280 122)"/>
+    <rect x="264" y="110" width="6" height="11" rx="3"/>
+    <rect x="272" y="108" width="6" height="12" rx="3"/>
+    <rect x="280" y="108" width="6" height="12" rx="3"/>
+    <rect x="288" y="110" width="6" height="11" rx="3"/>
+  </g>
+  <text x="280" y="172" text-anchor="middle" font-size="10.5" fill="#333333">Heel of one palm on the</text>
+  <text x="280" y="183" text-anchor="middle" font-size="10.5" fill="#333333">center of the chest</text>
+
+  <!-- Panel 3 -->
+  <rect x="374" y="40" width="172" height="142" rx="10" fill="#ffffff" stroke="#e6e1d8" stroke-width="1"/>
+  <circle cx="390" cy="54" r="11" fill="#f4c2c2"/>
+  <text x="390" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#333333">3</text>
+  <circle cx="460" cy="76" r="12" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <rect x="454" y="86" width="12" height="8" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <circle cx="436" cy="92" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <circle cx="484" cy="92" r="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <rect x="430" y="94" width="60" height="60" rx="16" fill="#fddcbd" stroke="#cfb096" stroke-width="1"/>
+  <path d="M 436 108 q 24 -6 48 0 M 436 120 q 24 -6 48 0 M 438 132 q 22 -5 44 0" stroke="#cfb096" stroke-width="1" fill="none"/>
+  <!-- interlocked hands, arms straight -->
+  <g fill="#fddcbd" stroke="#cfb096" stroke-width="1.2">
+    <rect x="442" y="112" width="36" height="14" rx="7" transform="rotate(-5 460 118)"/>
+    <rect x="446" y="100" width="30" height="14" rx="6" transform="rotate(4 460 106)"/>
+  </g>
+  <g stroke="#333333" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="452" y1="104" x2="442" y2="56"/>
+    <line x1="468" y1="104" x2="478" y2="56"/>
+  </g>
+  <!-- press arrow + depth bracket -->
+  <path d="M 516 100 L 516 130" stroke="#e9967a" stroke-width="2" fill="none"/>
+  <path d="M 511 122 l 5 6 l 5 -6" fill="#e9967a"/>
+  <path d="M 500 120 L 504 120 M 500 130 L 504 130" stroke="#e9967a" stroke-width="1.5"/>
+  <text x="521" y="118" text-anchor="start" font-size="9" fill="#333333">2 in</text>
+  <text x="460" y="172" text-anchor="middle" font-size="10.5" fill="#333333">Interlock fingers, arms</text>
+  <text x="460" y="183" text-anchor="middle" font-size="10.5" fill="#333333">straight — 100–120 / min</text>
+
+  <!-- ============ BOTTOM: two cross-sections ============ -->
+  <!-- LEFT: Normal -->
+  <rect x="14" y="196" width="262" height="196" rx="10" fill="#ffffff" stroke="#e6e1d8" stroke-width="1"/>
+  <text x="145" y="214" text-anchor="middle" font-size="12" font-weight="800" fill="#333333">NORMAL</text>
+  <!-- ribcage ring -->
+  <ellipse cx="145" cy="292" rx="86" ry="70" fill="#f4e4d4" stroke="#cfb096" stroke-width="1.6"/>
+  <path d="M 72 262 q 74 -26 148 0 M 72 292 q 74 -22 148 0 M 72 322 q 74 -20 148 0" stroke="#cfb096" stroke-width="1" fill="none"/>
+  <!-- spine (bottom/back) -->
+  <rect x="136" y="352" width="18" height="14" rx="4" fill="#d2b48c" stroke="#cfb096" stroke-width="1.2"/>
+  <circle cx="145" cy="366" r="6" fill="#d2b48c" stroke="#cfb096" stroke-width="1.2"/>
+  <!-- sternum (top/front) -->
+  <rect x="138" y="222" width="14" height="16" rx="3" fill="#f4e4d4" stroke="#cfb096" stroke-width="1.2"/>
+  <!-- lungs -->
+  <ellipse cx="100" cy="296" rx="24" ry="34" fill="#e6d0c8" stroke="#cbb5ad" stroke-width="1"/>
+  <ellipse cx="196" cy="296" rx="24" ry="34" fill="#e6d0c8" stroke="#cbb5ad" stroke-width="1"/>
+  <!-- heart -->
+  <path d="M 145 304 Q 128 292 132 282 Q 145 276 145 288 Q 145 276 158 282 Q 162 292 145 304 Z" fill="#e9967a" stroke="#c96a50" stroke-width="1.2"/>
+
+  <!-- labels + leader lines (NORMAL) -->
+  <g stroke="#333333" stroke-width="1.1" fill="none">
+    <line x1="160" y1="226" x2="196" y2="210"/>
+    <line x1="88" y1="280" x2="60" y2="252"/>
+    <line x1="150" y1="360" x2="196" y2="378"/>
+    <line x1="138" y1="292" x2="92" y2="302"/>
+    <line x1="118" y1="316" x2="92" y2="336"/>
+  </g>
+  <circle cx="196" cy="210" r="2" fill="#333333"/>
+  <circle cx="60" cy="252" r="2" fill="#333333"/>
+  <circle cx="196" cy="378" r="2" fill="#333333"/>
+  <circle cx="92" cy="302" r="2" fill="#333333"/>
+  <circle cx="92" cy="336" r="2" fill="#333333"/>
+  <g font-size="10" fill="#333333" font-weight="600" text-transform="uppercase">
+    <text x="200" y="213" text-anchor="start">Sternum</text>
+    <text x="20" y="248" text-anchor="start">Ribs</text>
+    <text x="200" y="381" text-anchor="start">Spine</text>
+    <text x="62" y="306" text-anchor="end">Heart</text>
+    <text x="62" y="340" text-anchor="end">Lungs</text>
+  </g>
+
+  <!-- RIGHT: Compressed (animated) -->
+  <rect x="284" y="196" width="262" height="196" rx="10" fill="#ffffff" stroke="#e6e1d8" stroke-width="1"/>
+  <text x="415" y="214" text-anchor="middle" font-size="12" font-weight="800" fill="#333333">COMPRESSED</text>
+  <!-- ribcage ring (flatter than normal) -->
+  <ellipse cx="415" cy="298" rx="86" ry="56" fill="#f4e4d4" stroke="#cfb096" stroke-width="1.6"/>
+  <path d="M 342 278 q 74 -20 148 0 M 342 298 q 74 -16 148 0 M 342 318 q 74 -14 148 0" stroke="#cfb096" stroke-width="1" fill="none"/>
+  <!-- spine -->
+  <rect x="406" y="344" width="18" height="12" rx="4" fill="#d2b48c" stroke="#cfb096" stroke-width="1.2"/>
+  <!-- lungs (squeezed inward) -->
+  <ellipse cx="374" cy="300" rx="20" ry="26" fill="#e6d0c8" stroke="#cbb5ad" stroke-width="1"/>
+  <ellipse cx="456" cy="300" rx="20" ry="26" fill="#e6d0c8" stroke="#cbb5ad" stroke-width="1"/>
+  <!-- heart (squeezed toward spine) -->
+  <path d="M 415 310 Q 401 302 404 294 Q 415 289 415 298 Q 415 289 426 294 Q 429 302 415 310 Z" fill="#e9967a" stroke="#c96a50" stroke-width="1.2"/>
+
+  <!-- ANIMATED compressor: hand + forearm pressing the sternum down -->
+  <g>
+    <animateTransform attributeName="transform" attributeType="XML" type="translate"
+      values="0 0; 0 12; 0 12; 0 0" keyTimes="0; 0.16; 0.9; 1" dur="0.6s" repeatCount="indefinite"/>
+    <rect x="400" y="238" width="30" height="34" rx="12" fill="#fddcbd" stroke="#cfb096" stroke-width="1.4"/>
+    <rect x="398" y="266" width="34" height="14" rx="6" fill="#fddcbd" stroke="#cfb096" stroke-width="1.4"/>
+    <rect x="396" y="228" width="38" height="14" rx="7" fill="#fddcbd" stroke="#cfb096" stroke-width="1.4"/>
+  </g>
+  <!-- sternum (pushed down with the hand) -->
+  <g>
+    <animateTransform attributeName="transform" attributeType="XML" type="translate"
+      values="0 0; 0 10; 0 10; 0 0" keyTimes="0; 0.16; 0.9; 1" dur="0.6s" repeatCount="indefinite"/>
+    <rect x="408" y="250" width="14" height="14" rx="3" fill="#f4e4d4" stroke="#cfb096" stroke-width="1.2"/>
+  </g>
+  <!-- "Press" arrow (animated with the hand) -->
+  <g>
+    <animateTransform attributeName="transform" attributeType="XML" type="translate"
+      values="0 0; 0 12; 0 12; 0 0" keyTimes="0; 0.16; 0.9; 1" dur="0.6s" repeatCount="indefinite"/>
+    <path d="M 458 236 L 458 258" stroke="#e9967a" stroke-width="2" fill="none"/>
+    <path d="M 453 252 l 5 6 l 5 -6" fill="#e9967a"/>
+  </g>
+  <text x="470" y="248" text-anchor="start" font-size="9.5" fill="#333333">Press</text>
+
+  <!-- labels (COMPRESSED) -->
+  <g stroke="#333333" stroke-width="1.1" fill="none">
+    <line x1="430" y1="246" x2="458" y2="214"/>
+    <line x1="356" y1="288" x2="330" y2="252"/>
+    <line x1="422" y1="348" x2="458" y2="378"/>
+    <line x1="412" y1="300" x2="372" y2="318"/>
+  </g>
+  <circle cx="458" cy="214" r="2" fill="#333333"/>
+  <circle cx="330" cy="252" r="2" fill="#333333"/>
+  <circle cx="458" cy="378" r="2" fill="#333333"/>
+  <circle cx="372" cy="318" r="2" fill="#333333"/>
+  <g font-size="10" fill="#333333" font-weight="600" text-transform="uppercase">
+    <text x="462" y="217" text-anchor="start">Sternum</text>
+    <text x="318" y="248" text-anchor="start">Ribs</text>
+    <text x="462" y="381" text-anchor="start">Spine</text>
+    <text x="358" y="322" text-anchor="end">Heart</text>
+  </g>
+</svg>
