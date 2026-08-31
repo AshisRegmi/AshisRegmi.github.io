@@ -1,10 +1,12 @@
-/* Emergency Quick Reference — offline-first service worker */
-/* Runs as a classic service-worker script in the browser. */
+/* Emergency Quick Reference — offline-first service worker.
+ * v2: network-first (always try for fresh content when online), cache as
+ * fallback for offline emergencies. Bump CACHE when you change the app shell.
+ */
 
-const CACHE = 'emerg-ref-v1';
+const CACHE = 'emerg-ref-v2';
 
 // Core app shell. Pre-cached on install; failures are tolerated so install
-// never breaks when an asset is not present yet (e.g. UI still in progress).
+// never breaks when an asset is not present yet.
 const CORE = [
   '/',
   'index.html',
@@ -38,33 +40,19 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
 
   const url = new URL(req.url);
-  // Only handle same-origin requests; let cross-origin (e.g. maps) pass through.
+  // Only handle same-origin requests; let cross-origin pass through.
   if (url.origin !== self.location.origin) return;
 
-  // Navigations: try network first (fresh content), fall back to cached shell
-  // so the app still opens offline in an emergency.
-  if (req.mode === 'navigate') {
-    event.respondWith(
-      fetch(req).catch(() =>
-        caches.match('index.html').then((r) => r || caches.match('/'))
-      )
-    );
-    return;
-  }
-
-  // Static assets: cache-first, then network, and populate the cache at runtime.
+  // Network-first: get fresh content when online, fall back to cache offline.
   event.respondWith(
-    caches.match(req).then((cached) => {
-      if (cached) return cached;
-      return fetch(req)
-        .then((res) => {
-          if (res && res.status === 200 && res.type === 'basic') {
-            const copy = res.clone();
-            caches.open(CACHE).then((c) => c.put(req, copy));
-          }
-          return res;
-        })
-        .catch(() => cached);
-    })
+    fetch(req)
+      .then((res) => {
+        if (res && res.status === 200 && res.type === 'basic') {
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(req, copy));
+        }
+        return res;
+      })
+      .catch(() => caches.match(req))
   );
 });
