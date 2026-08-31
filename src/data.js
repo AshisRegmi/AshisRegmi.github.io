@@ -39,7 +39,8 @@ export const topics = [
     keywords: ['cardiopulmonary resuscitation', 'heart stopped', 'no pulse', 'resuscitation', 'compressions'],
     steps: [
       'Check responsiveness and breathing. If the person is unresponsive and not breathing or only gasping, call 911 (or ask someone to) and get an AED if available.',
-      'Place the heel of one hand on the center of the chest, other hand on top, arms straight.',
+            'If you are untrained or unsure about rescue breaths, do hands-only CPR: continuous chest compressions, no breaths.',
+            'Place the heel of one hand on the center of the chest, other hand on top, arms straight.',
       'Push hard and fast: at least 2 inches deep, 100–120 compressions per minute.',
       'After 30 compressions, give 2 rescue breaths (head tilt-chin lift, pinch nose, blow until chest rises).',
       'Continue cycles of 30 compressions / 2 breaths until an AED arrives, the person revives, or EMS takes over.',
