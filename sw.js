@@ -10,7 +10,7 @@ const CORE = [
   'index.html',
   'assets/manifest.webmanifest',
   'assets/icon.svg',
-  'assets/sw.js'
+  'sw.js'
 ];
 
 self.addEventListener('install', (event) => {

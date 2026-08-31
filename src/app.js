@@ -163,6 +163,6 @@ renderList(topics);
 // --- Service worker (only over a secure context: https or localhost) ---
 if ('serviceWorker' in navigator && window.isSecureContext) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('assets/sw.js').catch(() => { /* offline optional */ });
+    navigator.serviceWorker.register('/sw.js').catch(() => { /* offline optional */ });
   });
 }
